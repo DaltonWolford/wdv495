@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+		margin: 0;
+		padding: 0;
+		font-family: source-serif-pro, serif;
+		font-weight: 100;
+	}
+
+	.preload * {
+	  -webkit-transition: none !important;
+	  -moz-transition: none !important;
+	  -ms-transition: none !important;
+	  -o-transition: none !important;
+	}
+	
+	#chili2 {
+	border-radius: 0px;
+	}
+
+	
+	header {
+		height: 30%;
+		width: 100%;
+		text-align: center;
+	}
+	
+	h1 {
+		font-size: 6em;
+		margin-top: 30px;
+		font-weight: 100;
+		text-decoration: none;
+    	background: url(underline.png) 50% 77% no-repeat;
+	}
+	
+	h2 {
+		font-size: 3em;
+		font-family: source-serif-pro, serif;
+		margin-left: 20%;
+		font-weight: 100;
+	}
+	
+	.holder {
+		display: flex;
+		width: 500px;
+		margin-left: 40%;
+	}
+	
+	h3 {
+		font-family: source-serif-pro, serif;
+		font-size: 2em;
+		margin-left: 5%;
+		width: 20%;
+		text-align: center;
+		font-weight: 100;
+	}
+	
+	main {
+		display: flex;
+
+
+	}
+	
+	.left {
+		width: 7%;
+		height: 100%;
+	}
+	
+	.box {
+		width: 95%;
+		height: 100%;
+	
+		border-radius: 30px 0px 0px 0px;
+	}
+	
+	.sections {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: space-between;
+		border-radius: 30px 0px 0px 0px;
+		-moz-box-shadow:    inset 0 0 10px #b3b3b3;
+  		-webkit-box-shadow: inset 0 0 10px #b3b3b3;
+  		box-shadow:         inset 0 0 10px #b3b3b3;
+		overflow: hidden;
+	}
+	
+	section {
+		height: 100%;
+		-moz-box-shadow:    inset 0 0 10px #b3b3b3;
+  		-webkit-box-shadow: inset 0 0 10px #b3b3b3;
+  		box-shadow:         inset 0 0 10px #b3b3b3;
+		transition-duration: .3s;
+		background-position: -5% 70%;
+  		background-size: 200px;
+		font-weight: 100;
+		text-shadow: 2px 2px 6px #8f8f8f;
+		overflow: hidden;
+	}
+	
+	section:hover {
+		background-color: #f7f7f7;
+		transition-duration: .3s;
+		background-position: 10% 70%;
+		background-size: 215px;
+		text-shadow: 1px 1px 4px #8f8f8f;
+		-moz-box-shadow:    inset 0 0 2px #b3b3b3;
+  		-webkit-box-shadow: inset 0 0 2px #b3b3b3;
+  		box-shadow:         inset 0 0 2px #b3b3b3;
+		padding-left: 100px;
+	}
+
+	
+	section.chili {
+	  background-image: url('chili.png');
+	  background-repeat: no-repeat;
+	  border-radius: 30px 0px 0px 0px;
+	}
+
+	section.chili:hover {
+	  font-weight: 200;
+	}
+
+	section.spag {
+	  background-image: url('spag.png');
+	  background-repeat: no-repeat;
+	}
+	
+	section.eggs {
+	  background-image: url('egg.png');
+	  background-repeat: no-repeat;
+	}
+	
+	.selector {
+	  background-color: white;
+	  -moz-box-shadow:    0 0 10px grey;
+  	  -webkit-box-shadow: 0 0 10px grey;
+  	  box-shadow:         0 0 10px grey;
+	  border-radius: 0% 50% 50% 0%;
+	  position: absolute;
+	  width: 295.68px;
+	  height: 295.68px;
+	  margin-left: -270px;
+	  pointer-events: none;
+	  transition: .3s;
+	  overflow: hidden;
+	  display: none;
+	}
+
+.x {
+	background-image: url('x.png');
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	margin-left: 80%;
+	margin-top: 3%;
+	opacity: .5;
+}
+
+.x:hover {
+	opacity: 1;
+}
+
+.info {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 4%;
+	margin-left: 20%;
+}
+
+input {
+	margin-top: 50px;
+}
+
+.control {
+	width: 20%;
+	position: absolute;
+	top: 100%;
+	left: 13%;
+	display: none;
+}
+
+.info {
+	margin-top: 10%;
+	padding-left: 5%;
+	margin-bottom: 100px;
+}
+
+.ingr {
+	width: 40%;
+}
+
+.instr {
+	width: 40%;
+	padding-right: 100px;
+}
+
+.chiliRecipe, .spagRecipe, .eggRecipe {
+	 display: none;
+	-moz-box-shadow:    inset 0 0 2px #b3b3b3;
+	-webkit-box-shadow: inset 0 0 2px #b3b3b3;
+	box-shadow:         inset 0 0 2px #b3b3b3;
+	border-radius: 30px 0px 0px 0px;
+	background-color: #f7f7f7;
+    background-repeat: no-repeat;
+	background-position: 10% 7.2%;
+	background-size: 215px;
+}
+
+.chiliRecipe {
+	background-image: url('chili.png');
+}
+
+.spagRecipe {
+	background-image: url('spag.png');
+}
+
+.eggRecipe {
+	background-image: url('egg.png');
+}
+
+.chiliRecipe .selector, .spagRecipe .selector, .eggRecipe .selector {
+	width: 295.68px;
+	height: 295.68px;
+	margin-left:  -170px;
+}
+
+
+.chiliRecipe h2 , .spagRecipe h2, .eggRecipe h2{
+	margin-top: 0px;
+	padding-top: 0.83em;
+	text-shadow: 1px 1px 4px #8f8f8f;
+	padding-left: 80px;
+	transition-duration: .3s;
+}
+
+.chiliRecipe h3 , .spagRecipe h3, .eggRecipe h3 {
+	text-shadow: 1px 1px 4px #8f8f8f;
+	transition-duration: .3s;
+}
+
+.chiliRecipe .holder, .spagRecipe .holder, .eggRecipe .holder{
+	margin-left: 40%;
+}

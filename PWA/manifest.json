@@ -1,0 +1,17 @@
+{
+	"name": "Recipe Manager",
+	"short_name": "Recipies",
+	"start_url": "index.html",
+	"display": "standalone",
+	"background_color": "white",
+	"theme_color": "white",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+		"src": "spag.png",
+		"type": "image/png",
+		"sizes": "300x300"
+		}
+	]
+	
+}

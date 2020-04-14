@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="https://use.typekit.net/knr1uzg.css">
+<link rel="manifest" href="manifest.json">
+
+<title>Recipes</title>
+	
+<style>
+	
+</style>
+</head>
+
+<body onload="onload()" id="onload" class="preload">
+	
+
+	
+	<header>
+		<h1>Recipes</h1>
+	</header>
+	
+	<main id="main">
+
+	
+	<div class="left">
+	</div>
+		
+	<div class="box" id="box">
+		<div class="sections" id="sections">
+			
+			<section class="chili" id="chili" onclick = "chiliRecipe()">
+				<h2>Crockpot Chili</h2>
+					<div class="holder">
+						<h3>Serves<br><span>6</span></h3>
+						<h3>Prep<br><span>25m</span></h3>
+						<h3>Cook<br><span>6h</span></h3>
+					</div>
+			</section>
+			<section class="spag" id="spag" onclick = "spagRecipe()">
+				<h2>Spaghetti</h2>
+					<div class="holder">
+						<h3>Serves<br><span>4</span></h3>
+						<h3>Prep<br><span>25m</span></h3>
+						<h3>Cook<br><span>30m</span></h3>
+					</div>
+			</section>
+			<section class="eggs"  id="eggs" onclick = "eggRecipe()">
+				<h2>Eggs</h2>
+					<div class="holder">
+						<h3>Serves<br><span>1</span></h3>
+						<h3>Prep<br><span>1m</span></h3>
+						<h3>Cook<br><span>5m</span></h3>
+					</div>
+			</section>
+			
+			<section class="chili" id="chili2" onclick = "chiliRecipe()">
+				<h2>Crockpot Chili</h2>
+					<div class="holder">
+						<h3>Serves<br><span>6</span></h3>
+						<h3>Prep<br><span>25m</span></h3>
+						<h3>Cook<br><span>6h</span></h3>
+					</div>
+			</section>
+			<section class="spag" id="spag2" onclick = "spagRecipe()">
+				<h2>Spaghetti</h2>
+					<div class="holder">
+						<h3>Serves<br><span>4</span></h3>
+						<h3>Prep<br><span>25m</span></h3>
+						<h3>Cook<br><span>30m</span></h3>
+					</div>
+			</section>
+			<section class="eggs"  id="eggs2" onclick = "eggRecipe()">
+				<h2>Eggs</h2>
+					<div class="holder">
+						<h3>Serves<br><span>1</span></h3>
+						<h3>Prep<br><span>1m</span></h3>
+						<h3>Cook<br><span>5m</span></h3>
+					</div>
+			</section>
+		</div>
+		
+	<div class="control" id="control">
+		<h4>Adjust Amount:</h4>
+		<input type="radio" name="math" value="2" onchange="mathSelect(2)">
+		<label for="mult">Double</label><br>
+		<input type="radio" name="math" value="1" checked onchange="mathSelect(1)">
+		<label for="none"><span id="quantOpt">6</span> Servings</label><br>
+		<input type="radio" name="math" value="0" onchange="mathSelect(0)">
+		<label for="div">Half</label>
+	</div>
+		
+		<div class="chiliRecipe" id="chiliRecipe">
+		<div class="x" onclick="closeRecipe()"></div>
+		<div class="selector"></div>
+			<h2>Crockpot Chili</h2>
+				<div class="holder">
+						<h3>Serves<br><span id="quant">6</span></h3>
+						<h3>Prep<br><span>25m</span></h3>
+						<h3>Cook<br><span>6h</span></h3>
+				</div>
+			
+				<div class="info">
+
+					<div class="ingr" id="ingr">
+						<h4>Ingredients:</h4>
+						<p><span id="a"></span> tbsp. cooking oil</p>
+						<p><span id="b"></span> cup onion</p>
+						<p><span id="c"></span> cup chopped peppers</p>
+						<p><span id="d"></span> tbsp. Chili powder</p>
+						<p><span id="e"></span> tsp. Hot chili powder (optional)</p>
+						<p><span id="f"></span> lb ground beef or chicken</p>
+						<p><span id="g"></span> cans Red Beans</p>
+						<p><span id="h"></span> cans Kidney Beans</p>
+						<p><span id="i"></span> cans Tomato Puree</p>
+						<p><span id="j"></span> cans Tomato Sauce</p>
+						<p><span id="k"></span> cup shredded cheese (optional)</p>
+						<p><span id="l"></span> cup sour cream (optional)</p>
+					</div>
+					<div class="instr">
+						<h4>Instructions:</h4>
+						<p>Heat cooking oil in 2 quart skillet.</p>
+						<p>Saute onions and peppers for 5 minutes.</p>
+						<p>Add spices and stir for 30 seconds.</p>
+						<p>Add meat and cook until browned. Approximately 15 minutes.</p>
+						<p>Pour contents of skillet into 3 quart crock pot.</p>
+						<p>Rinse beans and place in crockpot.</p>
+						<p>Open and pour Tomato puree and sauce into crock pot.</p>
+						<p>Cover crockpot and cook on low for 6 hours.</p>
+						<p>Serve into individual bowls and top with sour cream and cheese.</p>
+					</div>
+				</div>
+		</div>
+		
+		<div class="spagRecipe" id="spagRecipe">
+		<div class="x" onclick="closeRecipe()"></div>
+		<div class="selector"></div>
+			<h2>Spaghetti</h2>
+				<div class="holder">
+						<h3>Serves<br><span id="quant2">4</span></h3>
+						<h3>Prep<br><span>25m</span></h3>
+						<h3>Cook<br><span>30m</span></h3>
+				</div>
+			
+				<div class="info">
+
+					<div class="ingr" id="ingr2">
+						<h4>Ingredients:</h4>
+						<p><span id="m"></span> ounces dry spaghetti, uncooked</p>
+						<p><span id="n"></span> tbsp. canola oil</p>
+						<p><span id="o"></span> cup chopped onion</p>
+						<p><span id="p"></span> tbsp. minced garlic</p>
+						<p><span id="q"></span> pound ground round beef (85% lean)</p>
+						<p><span id="r"></span> can Pasta Sauce</p>
+						<p>Grated Parmesan cheese, optional</p>
+					</div>
+					<div class="instr">
+						<h4>Instructions:</h4>
+						<p>Cook spaghetti according to package directions.</p>
+						<p>Add onion and garlic; cook 5 minutes, stirring frequently.</p>
+						<p>Add beef; cook 7 minutes or until beef is crumbled and no longer pink</p>
+						<p>Drain.</p>
+						<p>Add pasta sauce to skillet; stir together. </p>
+						<p>Simmer covered over medium-low heat 10 minutes or until hot.</p>
+						<p>Drain spaghetti.</p>
+						<p>Serve meat sauce with spaghetti.</p>
+						<p>Sprinkle with cheese, if desired.</p>
+					</div>
+				</div>
+			
+		</div>
+		
+		<div class="eggRecipe" id="eggRecipe">
+		<div class="x" onclick="closeRecipe()"></div>
+		<div class="selector"></div>
+			<h2>Eggs</h2>
+				<div class="holder">
+						<h3>Serves<br><span id = "quant3">1</span></h3>
+						<h3>Prep<br><span>1m</span></h3>
+						<h3>Cook<br><span>5m</span></h3>
+				</div>
+				
+				<div class="info">
+
+					<div class="ingr" id="ingr3">
+						<h4>Ingredients:</h4>
+						<p><span id="s"></span> tbsp. butter</p>
+						<p><span id="t"></span> Eggs</p>
+						<p>Salt and Pepper</p>
+					</div>
+					<div class="instr">
+						<h4>Instructions:</h4>
+						<p>Heat <span id="u"></span>  tbsp. butter in a skillet.</p>
+						<p>Break eggs and put into pan, 1 at a time.</p>
+						<p>Reduce heat to low.</p>
+						<p>COOK Slowly until whites are completely set, 5 to 6 minutes.</p>
+						<p>Slide turner under each egg and carefully flip it over in pan.</p>
+						<p>Cook second side to desired doneness.</p>
+						<p>Sprinkle with salt and pepper.</p>
+						<p>Serve.</p>
+						
+					</div>
+				</div>
+		</div>
+		</div>
+
+	</main>
+		<script>
+					
+		  function onload() {
+		  document.getElementById("onload").classList.remove("preload");
+		  mathSelect(1);
+		};
+		
+		var selector = document.getElementById("selector");
+		var selectionsBox = document.getElementById("sections");
+		var chiliRecipeIns = document.getElementById("chiliRecipe");
+		var spagRecipeIns = document.getElementById("spagRecipe");
+		var eggRecipeIns = document.getElementById("eggRecipe");
+		var main = document.getElementById("main");
+			
+		function mathSelect(num) {
+
+			var mathOp;
+			if (num == 0)
+				mathOp = .5;
+			if (num == 1)
+				mathOp = 1;
+			if (num == 2)
+				mathOp = 2;
+			
+			var a = document.getElementById("a");
+			var b = document.getElementById("b");
+			var c = document.getElementById("c");
+			var d = document.getElementById("d");
+			var e = document.getElementById("e");
+			var f = document.getElementById("f");
+			var g = document.getElementById("g");
+			var h = document.getElementById("h");
+			var i = document.getElementById("i");
+			var j = document.getElementById("j");
+			var k = document.getElementById("k");
+			var l = document.getElementById("l");
+			
+			var m = document.getElementById("m");
+			var n = document.getElementById("n");
+			var o = document.getElementById("o");
+			var p = document.getElementById("p");
+			var q = document.getElementById("q");
+			var r = document.getElementById("r");
+			var s = document.getElementById("s");
+			var t = document.getElementById("t");
+			var u = document.getElementById("u");
+			var v = document.getElementById("v");
+			
+			
+			var quant = document.getElementById("quant");
+			var quant2 = document.getElementById("quant2");
+			var quant3 = document.getElementById("quant3");
+			
+			var one = 1 * mathOp;
+			var two = 2 * mathOp;
+			var half = .5 * mathOp;
+			var four = 4 * mathOp;
+			
+			a.innerHTML = two;
+			b.innerHTML = one;
+			c.innerHTML = one;
+			d.innerHTML = four;
+			e.innerHTML = one;
+			f.innerHTML = one;
+			g.innerHTML = two;
+			h.innerHTML = two;
+			i.innerHTML = two;
+			j.innerHTML = two;
+			k.innerHTML = one;
+			l.innerHTML = half;
+			
+			m.innerHTML = 12 * mathOp;
+			n.innerHTML = two;
+			o.innerHTML = one;
+			p.innerHTML = two;
+			q.innerHTML = one;
+			r.innerHTML = one;
+			
+			s.innerHTML = two;
+			t.innerHTML = two;
+			u.innerHTML = two;
+			
+			quant.innerHTML = 6 * mathOp;
+			quant2.innerHTML = four;
+			quant3.innerHTML = one;
+	
+		}
+			
+		document.getElementById("chili").onmouseover = 		
+			function chili() {
+			  selector.style.marginTop = "0px";
+			};
+		
+		document.getElementById("spag").onmouseover = 		
+			function spag() {
+			  selector.style.marginTop = "295px";
+			};
+			
+		document.getElementById("eggs").onmouseover = 
+			function eggs() {
+			  selector.style.marginTop = "590px";
+			};
+			
+		document.getElementById("box").onmouseover = 		
+			function box() {
+			  selector.style.width = "295.68px";
+			  selector.style.height = "295.68px";
+			  selector.style.marginLeft = "-170px";
+			};
+			
+		document.getElementById("box").onmouseout = 		
+			function box() {
+			  selector.style.width = "280px";
+			  selector.style.height = "280px";
+			  selector.style.marginLeft = "-270px";
+			};
+
+		function chiliRecipe() {
+			  var mainHeight = main.clientHeight;
+			  selectionsBox.style.display = "none";
+			  chiliRecipeIns.style.display = "block";
+			document.getElementById("control").style.display = "block";
+			document.getElementById("quantOpt").innerHTML= "6";
+			}
+			
+		function spagRecipe() {
+			  var mainHeight = main.clientHeight;
+			  selectionsBox.style.display = "none";
+			  spagRecipeIns.style.display = "block";
+			document.getElementById("control").style.display = "block";
+			document.getElementById("quantOpt").innerHTML= "4";
+			}
+			
+		function eggRecipe() {
+			  var mainHeight = main.clientHeight;
+			  selectionsBox.style.display = "none";
+			  eggRecipeIns.style.display = "block";
+			  document.getElementById("control").style.display = "block";
+			  document.getElementById("quantOpt").innerHTML= "1";
+		}
+					
+		function closeRecipe() {
+			  
+			  document.getElementById("onload").classList.add("preload");
+			  setTimeout(function () {
+				  document.getElementById("onload").classList.remove("preload");
+			  }, 200);
+			
+			  selectionsBox.style.display = "flex";
+			  chiliRecipeIns.style.display = "none";
+			  spagRecipeIns.style.display = "none";
+			  eggRecipeIns.style.display = "none";
+			  document.getElementById("control").style.display = "none";
+			}
+		
+	</script>
+	<script src="app.js"></script>
+	
+</body>
+</html>
